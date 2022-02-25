@@ -17,5 +17,5 @@
     "jsx": "react-jsx",
     "typeRoots": ["src/global.d.ts", "node_modules/@types"]
   },
-  "include": ["src"]
+  "include": ["src", "stylelint.config.js", "jest.config.js"]
 }

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import Home from './pages/home';
-import About from './pages/about';
+
 import './app.scss';
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
     <div className="app">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
         <Route path="/home" component={Home} />
         <Redirect to="/" />
       </Switch>
