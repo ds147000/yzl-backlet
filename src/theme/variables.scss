@@ -1,11 +1,5 @@
-@media screen and (min-width: 750px) {
-  body {
-    --unit: 1px;
-  }
-}
+$back: rgb(51, 49, 49);
 
-@media screen and (max-width: 750px) {
-  body {
-    --unit: 100 / 750 * 1vw;
-  }
-}
+$title: #fff;
+
+$pad: unit(40);

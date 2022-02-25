@@ -1,8 +1,19 @@
 .home {
-  background-color: rgb(51, 49, 49);
+  background-color: $back;
 
   .logo {
-    width: setRem(300);
-    height: setRem(300);
+    width: unit(300);
+    height: unit(300);
+  }
+
+  .title {
+    font-size: unit(40);
+    color: $title;
+    text-align: center;
+    padding-top: unit(60);
+  }
+
+  .floor {
+    width: unit(250);
   }
 }

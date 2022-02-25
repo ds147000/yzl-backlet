@@ -1,5 +1,5 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   extends: ['@arcblock/eslint-config', 'plugin:react/jsx-runtime'],
   env: {
     es6: true,
@@ -15,4 +15,5 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
   },
+  plugins: ['@typescript-eslint'],
 };
