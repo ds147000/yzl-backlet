@@ -15,7 +15,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "typeRoots": ["src/global.d.ts", "node_modules/@types"]
+    "typeRoots": ["src/global.d.ts", "node_modules/@types"],
+    "paths": {
+      "@": ["./src/*"]
+    }
   },
-  "include": ["src", "stylelint.config.js", "jest.config.js"]
+  "include": ["src", "stylelint.config.js", "jest.config.js", "config-overrides.js"]
 }

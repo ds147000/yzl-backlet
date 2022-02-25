@@ -1,0 +1,24 @@
+@import '~antd/dist/antd.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-ac {
+  align-items: center;
+}
+
+.flex-jc {
+  justify-content: center;
+}

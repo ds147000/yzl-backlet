@@ -1,0 +1,8 @@
+@function unit($value) {
+  @return $value;
+  // @return calc($value * var(--unit));
+}
+
+@function setRem($value) {
+  @return $value * 2px;
+}
