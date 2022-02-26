@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { fireEvent, render, waitFor } from '@testing-library/react';
 import Home from '../index';
 

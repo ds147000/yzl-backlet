@@ -1,3 +1,6 @@
+/* eslint-disable no-await-in-loop */
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { waitFor, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { GetHashBlockDetails } from '@/api/quire';
@@ -7,6 +10,10 @@ import Quire from '../index';
 jest.mock('@/api/quire');
 
 const MockGetHashBlockDetails = GetHashBlockDetails as unknown as jest.Mock<typeof GetHashBlockDetails>;
+
+beforeEach(() => {
+  MockGetHashBlockDetails.mockClear();
+});
 
 describe('Quire', () => {
   const props: any = {
@@ -20,7 +27,7 @@ describe('Quire', () => {
 
   test('空值查询', async () => {
     const Page = render(<Quire {...props} />);
-    const subBtn = Page.getByText('查询');
+    const subBtn = Page.getByTestId('submit');
     userEvent.click(subBtn);
 
     const keys = Object.keys(GetHashBlockDetailsReuslt);
@@ -29,13 +36,13 @@ describe('Quire', () => {
     for (let i = 0; i < keys.length; i++) {
       const key = keys[i] as keyof typeof GetHashBlockDetailsReuslt;
       // eslint-disable-next-line no-await-in-loop
-      await waitFor(() => expect(Page.getByTestId(key).innerText).toBe(''));
+      await waitFor(() => expect(Page.getByTestId(key).innerHTML).toBe(''));
     }
   });
 
   test('输入空格查询', async () => {
     const Page = render(<Quire {...props} />);
-    const subBtn = Page.getByText('查询');
+    const subBtn = Page.getByTestId('submit');
     const input = Page.getByPlaceholderText('请输入Block Hash');
 
     userEvent.type(input, '       ');
@@ -47,7 +54,7 @@ describe('Quire', () => {
     for (let i = 0; i < keys.length; i++) {
       const key = keys[i] as keyof typeof GetHashBlockDetailsReuslt;
       // eslint-disable-next-line no-await-in-loop
-      await waitFor(() => expect(Page.getByTestId(key).innerText).toBe(''));
+      await waitFor(() => expect(Page.getByTestId(key).innerHTML).toBe(''));
     }
   });
 
@@ -62,32 +69,42 @@ describe('Quire', () => {
     };
 
     const Page = render(<Quire {..._props} />);
-    const subBtn = Page.getByText('查询');
-    const input = Page.getByPlaceholderText('清输入Block Hash');
+    const subBtn = Page.getByTestId('submit');
+    const input = Page.getByPlaceholderText('请输入Block Hash');
 
     userEvent.type(input, 'abcsasakjklsajkajsklajkslwqwqsa');
     userEvent.click(subBtn);
 
     await waitFor(() => expect(MockGetHashBlockDetails).toHaveBeenCalledTimes(1));
     await waitFor(() => expect(_props.history.push).toHaveBeenCalledTimes(1));
-    await waitFor(() =>
-      expect(_props.history.push.mock.calls[0][0]).toBe('/quire?hash=abcsasakjklsajkajsklajkslwqwqsa')
-    );
+    await waitFor(() => expect(_props.history.push.mock.calls[0][0]).toBe('?hash=abcsasakjklsajkajsklajkslwqwqsa'));
 
     const keys = Object.keys(GetHashBlockDetailsReuslt);
     for (let i = 0; i < keys.length; i++) {
       const key = keys[i] as keyof typeof GetHashBlockDetailsReuslt;
-      // eslint-disable-next-line no-await-in-loop
-      await waitFor(() => expect(Page.getByTestId(key).innerText).toBe(GetHashBlockDetailsReuslt[key]));
+      const val = GetHashBlockDetailsReuslt[key];
+      if (typeof val === 'string' || typeof val === 'number') {
+        await waitFor(() => expect(Page.getByTestId(key).innerHTML).toBe(String(val)));
+      } else if (val === true) {
+        await waitFor(() => expect(Page.getByTestId(key).innerHTML).toBe('Yes'));
+      } else if (val === false) {
+        await waitFor(() => expect(Page.getByTestId(key).innerHTML).toBe('No'));
+      }
     }
   });
 
   test('接口错误请客', async () => {
     const Page = render(<Quire {...props} />);
-    const subBtn = Page.getByText('查询');
-    const input = Page.getByPlaceholderText('清输入Block Hash');
+    const subBtn = Page.getByTestId('submit');
+    const input = Page.getByPlaceholderText('请输入Block Hash');
 
-    MockGetHashBlockDetails.mockRejectedValue(new Error('service 500') as unknown as never);
+    MockGetHashBlockDetails.mockRejectedValueOnce({
+      response: {
+        data: {
+          message: 'server error',
+        },
+      },
+    } as unknown as never);
 
     userEvent.type(input, 'abcsasakjklsajkajsklajkslwqwqsa');
     userEvent.click(subBtn);
@@ -96,6 +113,24 @@ describe('Quire', () => {
 
     Page.getByText('暂无数据');
   });
+
+  test('接口错误请客', async () => {
+    const Page = render(<Quire {...props} />);
+    const subBtn = Page.getByTestId('submit');
+    const input = Page.getByPlaceholderText('请输入Block Hash');
+
+    MockGetHashBlockDetails.mockRejectedValueOnce({
+      response: {},
+    } as unknown as never);
+
+    userEvent.type(input, 'abcsasakjklsajkajsklajkslwqwqsa');
+    userEvent.click(subBtn);
+
+    await waitFor(() => expect(MockGetHashBlockDetails).toHaveBeenCalledTimes(1));
+
+    Page.getByText('暂无数据');
+  });
+
 
   test('刷新页面', async () => {
     const _props: any = {
@@ -113,7 +148,16 @@ describe('Quire', () => {
   });
 
   test('快照', async () => {
-    const Page = render(<Quire {...props} />);
+    const _props: any = {
+      history: {
+        location: {
+          search: '?hash=1234567890',
+        },
+        push: jest.fn(),
+      },
+    };
+
+    const Page = render(<Quire {..._props} />);
     await waitFor(() => expect(Page).toMatchSnapshot());
   });
 });

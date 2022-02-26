@@ -36,7 +36,7 @@ const Quire: React.FC<RouteComponentProps> = ({ history }) => {
       GetHashBlockDetails(hash)
         .then((res) => setData(res))
         .catch((err) => {
-          if (err.response.data?.message) message.error(err.response.data?.message);
+          if (err.response.data?.message) message.error(err.response.data.message);
         })
         .finally(() => setLoading(false));
     },
@@ -56,7 +56,7 @@ const Quire: React.FC<RouteComponentProps> = ({ history }) => {
               <Input placeholder="请输入Block Hash" className="input" />
             </Form.Item>
             <Form.Item>
-              <Button type="primary" htmlType="submit" block>
+              <Button type="primary" htmlType="submit" block data-testid="submit">
                 查询
               </Button>
             </Form.Item>

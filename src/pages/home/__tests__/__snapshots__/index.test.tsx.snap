@@ -1,15 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home 1`] = `
+exports[`Home 快照 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div />
+      <div
+        class="page home flex flex-ac flex-jc flex-col"
+      >
+        <img
+          alt="logo"
+          class="logo"
+          src=""
+        />
+        <h1
+          class="title"
+        >
+          hash Block查询器
+        </h1>
+        <div
+          class="floor"
+        >
+          <button
+            class="ant-btn ant-btn-primary ant-btn-lg ant-btn-block"
+            type="button"
+          >
+            <span>
+              立即查询
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <div />
+    <div
+      class="page home flex flex-ac flex-jc flex-col"
+    >
+      <img
+        alt="logo"
+        class="logo"
+        src=""
+      />
+      <h1
+        class="title"
+      >
+        hash Block查询器
+      </h1>
+      <div
+        class="floor"
+      >
+        <button
+          class="ant-btn ant-btn-primary ant-btn-lg ant-btn-block"
+          type="button"
+        >
+          <span>
+            立即查询
+          </span>
+        </button>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -17,8 +17,8 @@
     "lint:fix": "eslint --fix \"**/*.{js,ts,tsx}\" && npm run lint:style:fix",
     "lint:style": "stylelint \"**/*.{scss, css, less}\"",
     "lint:style:fix": "stylelint --fix \"**/*.{css,less,scss}\"",
-    "test": "node scripts/test.js",
-    "test:prod": "node scripts/test.js --silent --no-cache --coverage"
+    "test": "node scripts/jest.js --coverage",
+    "test:prod": "node scripts/jest.js --silent --no-cache --coverage"
   },
   "browserslist": {
     "production": [

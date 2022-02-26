@@ -1,5 +1,5 @@
 export default {
-  process() {
+  process(): string {
     return '';
   },
 };

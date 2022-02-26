@@ -1,0 +1,532 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quire/Item 快照 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Hash
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="hash"
+          >
+            0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Ver
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="ver"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            PrevBlock
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="prev_block"
+          >
+            00000000000007d0f98d9edca880a6c124e25095712df8952e0439ac7409738a
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Mrkl Root
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="mrkl_root"
+          >
+            935aa0ed2e29a4b81e0c995c39e06995ecce7ddbebb26ed32d550a72e8200bf5
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Time
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="time"
+          >
+            1322131230
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Bits
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="bits"
+          >
+            437129626
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Nonce
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="nonce"
+          >
+            2964215930
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            N Text
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="n_tx"
+          >
+            22
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Size
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="size"
+          >
+            9195
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Block Index
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="block_index"
+          >
+            818044
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Main Chain
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="main_chain"
+          >
+            Yes
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Height
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="height"
+          >
+            154595
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Received Time
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="received_time"
+          >
+            1322131301
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            Relayed By
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="relayed_by"
+          >
+            108.60.208.156
+          </div>
+        </div>
+        <div
+          class="item flex"
+        >
+          <div
+            class="label"
+          >
+            More
+          </div>
+          <div
+            class="flex1 value"
+            data-testid="tx"
+          >
+            <p>
+              <a
+                href="/quire?hash=0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103"
+                target="0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103"
+              >
+                0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Hash
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="hash"
+        >
+          0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Ver
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="ver"
+        >
+          1
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          PrevBlock
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="prev_block"
+        >
+          00000000000007d0f98d9edca880a6c124e25095712df8952e0439ac7409738a
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Mrkl Root
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="mrkl_root"
+        >
+          935aa0ed2e29a4b81e0c995c39e06995ecce7ddbebb26ed32d550a72e8200bf5
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Time
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="time"
+        >
+          1322131230
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Bits
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="bits"
+        >
+          437129626
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Nonce
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="nonce"
+        >
+          2964215930
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          N Text
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="n_tx"
+        >
+          22
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Size
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="size"
+        >
+          9195
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Block Index
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="block_index"
+        >
+          818044
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Main Chain
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="main_chain"
+        >
+          Yes
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Height
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="height"
+        >
+          154595
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Received Time
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="received_time"
+        >
+          1322131301
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          Relayed By
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="relayed_by"
+        >
+          108.60.208.156
+        </div>
+      </div>
+      <div
+        class="item flex"
+      >
+        <div
+          class="label"
+        >
+          More
+        </div>
+        <div
+          class="flex1 value"
+          data-testid="tx"
+        >
+          <p>
+            <a
+              href="/quire?hash=0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103"
+              target="0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103"
+            >
+              0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

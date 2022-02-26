@@ -1,0 +1,716 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quire 快照 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="ant-message"
+      >
+        <div>
+          <div
+            class="ant-message-notice"
+          >
+            <div
+              class="ant-message-notice-content"
+            >
+              <div
+                class="ant-message-custom-content ant-message-error"
+              >
+                <span
+                  aria-label="close-circle"
+                  class="anticon anticon-close-circle"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="close-circle"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  data is empty
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-message-notice"
+          >
+            <div
+              class="ant-message-notice-content"
+            >
+              <div
+                class="ant-message-custom-content ant-message-error"
+              >
+                <span
+                  aria-label="close-circle"
+                  class="anticon anticon-close-circle"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="close-circle"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  server error
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style
+      rc-util-key="antd-wave"
+    >
+      
+      [ant-click-animating-without-extra-node='true']::after, .ant-click-animating-node {
+        --antd-wave-shadow-color: buttonface;
+      }
+    </style>
+    <div>
+      <div
+        class="page quire"
+      >
+        <div>
+          <div
+            class=""
+          >
+            <div
+              class="header flex flex-ac flex-jc"
+            >
+              <form
+                class="ant-form ant-form-inline"
+              >
+                <div
+                  class="ant-row ant-form-item"
+                >
+                  <div
+                    class="ant-col ant-form-item-label"
+                  >
+                    <label
+                      class="ant-form-item-required"
+                      for="hash"
+                      title="Block Hash"
+                    >
+                      Block Hash
+                    </label>
+                  </div>
+                  <div
+                    class="ant-col ant-form-item-control"
+                  >
+                    <div
+                      class="ant-form-item-control-input"
+                    >
+                      <div
+                        class="ant-form-item-control-input-content"
+                      >
+                        <input
+                          class="ant-input input"
+                          id="hash"
+                          placeholder="请输入Block Hash"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ant-row ant-form-item"
+                >
+                  <div
+                    class="ant-col ant-form-item-control"
+                  >
+                    <div
+                      class="ant-form-item-control-input"
+                    >
+                      <div
+                        class="ant-form-item-control-input-content"
+                      >
+                        <button
+                          class="ant-btn ant-btn-primary ant-btn-block"
+                          data-testid="submit"
+                          type="submit"
+                        >
+                          <span>
+                            查 询
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-spin-nested-loading"
+        >
+          <div
+            class="ant-spin-container"
+          >
+            <div
+              class="list"
+            >
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Hash
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="hash"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Ver
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="ver"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  PrevBlock
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="prev_block"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Mrkl Root
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="mrkl_root"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Time
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="time"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Bits
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="bits"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Nonce
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="nonce"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  N Text
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="n_tx"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Size
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="size"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Block Index
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="block_index"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Main Chain
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="main_chain"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Height
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="height"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Received Time
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="received_time"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  Relayed By
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="relayed_by"
+                />
+              </div>
+              <div
+                class="item flex"
+              >
+                <div
+                  class="label"
+                >
+                  More
+                </div>
+                <div
+                  class="flex1 value"
+                  data-testid="tx"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="page quire"
+    >
+      <div>
+        <div
+          class=""
+        >
+          <div
+            class="header flex flex-ac flex-jc"
+          >
+            <form
+              class="ant-form ant-form-inline"
+            >
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-form-item-label"
+                >
+                  <label
+                    class="ant-form-item-required"
+                    for="hash"
+                    title="Block Hash"
+                  >
+                    Block Hash
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-form-item-control"
+                >
+                  <div
+                    class="ant-form-item-control-input"
+                  >
+                    <div
+                      class="ant-form-item-control-input-content"
+                    >
+                      <input
+                        class="ant-input input"
+                        id="hash"
+                        placeholder="请输入Block Hash"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-form-item-control"
+                >
+                  <div
+                    class="ant-form-item-control-input"
+                  >
+                    <div
+                      class="ant-form-item-control-input-content"
+                    >
+                      <button
+                        class="ant-btn ant-btn-primary ant-btn-block"
+                        data-testid="submit"
+                        type="submit"
+                      >
+                        <span>
+                          查 询
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-spin-nested-loading"
+      >
+        <div
+          class="ant-spin-container"
+        >
+          <div
+            class="list"
+          >
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Hash
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="hash"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Ver
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="ver"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                PrevBlock
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="prev_block"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Mrkl Root
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="mrkl_root"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Time
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="time"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Bits
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="bits"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Nonce
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="nonce"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                N Text
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="n_tx"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Size
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="size"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Block Index
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="block_index"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Main Chain
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="main_chain"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Height
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="height"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Received Time
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="received_time"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                Relayed By
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="relayed_by"
+              />
+            </div>
+            <div
+              class="item flex"
+            >
+              <div
+                class="label"
+              >
+                More
+              </div>
+              <div
+                class="flex1 value"
+                data-testid="tx"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

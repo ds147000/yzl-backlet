@@ -1,4 +1,4 @@
-import type React from 'react';
+import React from 'react';
 import type { RouteComponentProps } from 'react-router';
 import { Button } from 'antd';
 import logo from '../../assets/img/logo.svg';

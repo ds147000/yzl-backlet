@@ -21,7 +21,7 @@ const Item: React.FC<ItemProps> = ({ label, value }) => {
 };
 
 function valueToString(value?: ItemValue): React.ReactNode {
-  if (!value) return '';
+  if (typeof value === 'undefined') return '';
 
   switch (typeof value) {
     case 'boolean':
@@ -39,7 +39,6 @@ function valueToString(value?: ItemValue): React.ReactNode {
           <a href={`/quire?hash=${item.hash}`} target={item.hash}>
             {item.hash}
           </a>
-          ;
         </p>
       ));
   }

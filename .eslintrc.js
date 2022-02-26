@@ -1,6 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['@arcblock/eslint-config', 'plugin:react/jsx-runtime'],
+  extends: ['@arcblock/eslint-config'],
   env: {
     es6: true,
     browser: true,

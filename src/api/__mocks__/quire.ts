@@ -31,10 +31,20 @@ export const GetHashBlockDetailsReuslt = {
   height: 154595,
   received_time: 1322131301,
   relayed_by: '108.60.208.156',
-  tx: [GetHashBlockDetailsItem, GetHashBlockDetailsItem],
+  tx: [GetHashBlockDetailsItem],
 };
 
-export async function GetHashBlockDetails(data: string) {
-  if (data) return Promise.reject();
+export const GetHashBlockDetails = jest.fn((data) => {
+  if (!data) {
+    // eslint-disable-next-line prefer-promise-reject-errors
+    return Promise.reject({
+      response: {
+        data: {
+          message: 'data is empty',
+        },
+      },
+    });
+  }
+
   return Promise.resolve(GetHashBlockDetailsReuslt);
-}
+});
