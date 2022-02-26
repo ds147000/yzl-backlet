@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import Home from '@/pages/home';
+import Quire from '@/pages/quire';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
+        <Route path="/quire" component={Quire} />
         <Redirect to="/" />
       </Switch>
     </div>

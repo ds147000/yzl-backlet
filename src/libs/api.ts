@@ -20,8 +20,12 @@ class Request {
     this._axios = _axios;
   }
 
-  async post<req, res>(url: string, data: req): Promise<res> {
+  async post<res>(url: string, data?: any): Promise<res> {
     return this._axios.post(url, data);
+  }
+
+  async get<res>(url: string, parmas?: any): Promise<res> {
+    return this._axios.get(url, parmas);
   }
 }
 

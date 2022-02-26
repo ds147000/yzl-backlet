@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
+    'react/require-default-props': 'off',
   },
   plugins: ['@typescript-eslint'],
 };

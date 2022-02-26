@@ -6,7 +6,7 @@ import './style.scss';
 
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const onGo = () => {
-    history.push('/');
+    history.push('/quire');
   };
 
   return (

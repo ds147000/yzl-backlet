@@ -1,0 +1,45 @@
+.quire {
+  .header {
+    height: unit(100);
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px $back;
+  }
+
+  .input {
+    width: unit(400);
+  }
+
+  .list {
+    position: relative;
+    padding: unit(15) unit(20) unit(20) unit(50);
+
+    .mask {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background-color: $mask;
+      box-sizing: border-box;
+      padding-top: unit(150);
+    }
+
+    .item {
+      border-bottom: 1px solid $border;
+      padding: unit(15) unit(0);
+
+      .label {
+        width: unit(150);
+        font-weight: 700;
+        font-size: unit(14);
+        color: $text2;
+      }
+
+      .value {
+        color: $text;
+        font-size: unit(12);
+      }
+    }
+  }
+}
