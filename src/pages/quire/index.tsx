@@ -33,7 +33,6 @@ const Quire: React.FC<RouteComponentProps> = ({ history }) => {
 
   const onSubmit = useCallback(
     ({ hash }) => {
-      console.log(1);
       if (RequestSuore.current) RequestSuore.current.cancel('');
       if (params.hash !== hash) history.push(`?hash=${hash}`);
 
