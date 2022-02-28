@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/prefer-default-export */
+import { AxiosRequestConfig } from 'axios';
 import request from '@/libs/api';
 
 export type HashBlockDetailsResponse = {
@@ -20,6 +21,6 @@ export type HashBlockDetailsResponse = {
   'tx'?: HashBlockDetailsResponse[];
 };
 
-export async function GetHashBlockDetails(data: string) {
-  return request.get<HashBlockDetailsResponse>(`https://blockchain.info/rawblock/${data}`);
+export async function GetHashBlockDetails(hash: string, config?: AxiosRequestConfig) {
+  return request.get<HashBlockDetailsResponse>(`https://blockchain.info/rawblock/${hash}`, config);
 }

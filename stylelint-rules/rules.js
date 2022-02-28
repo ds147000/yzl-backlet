@@ -87,4 +87,6 @@ module.exports = {
   /** @description 禁止未知选择器 */
   'selector-type-no-unknown': [true, { ignoreTypes: ['page'] }],
   'declaration-property-value-disallowed-list': null,
+  'scss/at-import-partial-extension-blacklist': ['css'],
+  'font-family-no-missing-generic-family-keyword': [true, { ignoreFontFamilies: ['xrkIcon'] }],
 };

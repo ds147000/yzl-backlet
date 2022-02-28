@@ -3,5 +3,5 @@ interface Blocklet {
 }
 
 declare interface Window {
-  blocklet: Blocklet;
+  blocklet?: Blocklet;
 }

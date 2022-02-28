@@ -1,8 +1,10 @@
+/* eslint-disable no-console */
 import qs from 'qs';
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Form, Input, Button, message, Empty, Affix, Spin } from 'antd';
 import { RouteComponentProps } from 'react-router-dom';
 import { GetHashBlockDetails, HashBlockDetailsResponse } from '@/api/quire';
+import request from '@/libs/api';
 import { LabelMap } from './config';
 import Item from './item';
 import './style.scss';
@@ -27,16 +29,21 @@ const Quire: React.FC<RouteComponentProps> = ({ history }) => {
   const keys = useMemo(() => Object.keys(LabelMap) as (keyof HashBlockDetailsResponse)[], [data]);
   const isEmpty = Object.values(data).length === 0;
   const params = qs.parse(history.location.search.slice(1)) as RouterPramas;
+  const RequestSuore = useRef<ReturnType<typeof request.getCloseSoure>>();
 
   const onSubmit = useCallback(
     ({ hash }) => {
+      console.log(1);
+      if (RequestSuore.current) RequestSuore.current.cancel('');
       if (params.hash !== hash) history.push(`?hash=${hash}`);
 
       setLoading(true);
-      GetHashBlockDetails(hash)
+      const suore = request.getCloseSoure();
+      RequestSuore.current = suore;
+      GetHashBlockDetails(hash, { cancelToken: suore.token })
         .then((res) => setData(res))
         .catch((err) => {
-          if (err.response.data?.message) message.error(err.response.data.message);
+          if (err?.response?.data?.message) message.error(err.response.data.message);
         })
         .finally(() => setLoading(false));
     },
@@ -45,6 +52,12 @@ const Quire: React.FC<RouteComponentProps> = ({ history }) => {
 
   useEffect(() => {
     if (params.hash) onSubmit({ hash: params.hash });
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      RequestSuore.current?.cancel();
+    };
   }, []);
 
   return (

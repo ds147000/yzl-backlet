@@ -5,5 +5,5 @@ module.exports = {
   'at-rule-no-vendor-prefix': null,
   'property-no-vendor-prefix': null,
   'value-no-vendor-prefix': null,
-  'order/properties-alphabetical-order': null,
+  'scss/no-global-function-names': null,
 };
